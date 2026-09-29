@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — NovaVault</title><link rel="stylesheet" href="style.css">
+</head><body class="dash-body">
+<header class="nav"><a class="brand" href="index.html"><span class="brand-mark">N</span> NovaVault</a><nav><a href="index.html">Home</a><a href="#portfolio">Portfolio</a><a href="#activity">Activity</a></nav><a class="btn small" href="index.html">Back home</a></header>
+<main class="dashboard" id="portfolio">
+<div class="dash-head"><div><div class="eyebrow">OVERVIEW</div><h1>Your portfolio</h1><p>Illustrative dashboard data for the website demo.</p></div><button class="ghost" id="refresh">↻ Refresh</button></div>
+<div class="dash-grid">
+<div class="panel total"><span>Total portfolio value</span><strong>$24,680.42</strong><em>+8.42% this period</em><div class="big-chart"><svg viewBox="0 0 700 220" preserveAspectRatio="none"><path d="M0 180 C50 170 75 190 120 145 S185 160 230 120 S285 140 335 92 S390 120 430 75 S500 105 550 62 S625 70 700 25"/></svg></div></div>
+<div class="panel"><span>Allocation</span><div class="allocation"><div class="alloc-row"><b>Bitcoin</b><span>42%</span></div><div class="bar"><i style="width:42%"></i></div><div class="alloc-row"><b>Ethereum</b><span>28%</span></div><div class="bar"><i style="width:28%"></i></div><div class="alloc-row"><b>Solana</b><span>18%</span></div><div class="bar"><i style="width:18%"></i></div><div class="alloc-row"><b>Other</b><span>12%</span></div><div class="bar"><i style="width:12%"></i></div></div></div>
+</div>
+<section class="panel assets-table"><div class="panel-title"><h2>Assets</h2><span>Illustrative values</span></div>
+<div class="asset-line"><div class="coin btc">₿</div><b>Bitcoin <small>BTC</small></b><strong>$10,420.00</strong><em>+2.84%</em></div>
+<div class="asset-line"><div class="coin eth">◆</div><b>Ethereum <small>ETH</small></b><strong>$6,912.00</strong><em>+1.63%</em></div>
+<div class="asset-line"><div class="coin sol">S</div><b>Solana <small>SOL</small></b><strong>$4,496.00</strong><em>+4.21%</em></div>
+<div class="asset-line"><div class="coin usdt">₮</div><b>Tether <small>USDT</small></b><strong>$2,852.42</strong><em>+0.01%</em></div>
+</section>
+<section class="panel" id="activity"><div class="panel-title"><h2>Recent activity</h2><span>Demo records</span></div>
+<div class="activity"><span class="activity-icon">↗</span><div><b>Portfolio updated</b><small>Today · 10:42</small></div><strong>+$1,240.00</strong></div>
+<div class="activity"><span class="activity-icon">↔</span><div><b>BTC allocation changed</b><small>Yesterday · 18:21</small></div><strong>42%</strong></div>
+<div class="activity"><span class="activity-icon">✓</span><div><b>Profile verified</b><small>Sep 27 · 12:08</small></div><strong>Complete</strong></div>
+</section>
+</main><footer><div class="brand"><span class="brand-mark">N</span> NovaVault</div><p>Demo dashboard — no real transactions are processed.</p></footer>
+<script>document.getElementById('refresh').onclick=()=>{document.getElementById('refresh').textContent='✓ Updated';setTimeout(()=>document.getElementById('refresh').textContent='↻ Refresh',1200)}</script>
+</body></html>
